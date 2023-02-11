@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <header>
+        <h1> QUIZ GAME</h1>
+        <P>Conocimiento de la biblia</P>
+    </header>
+
+    <div class="conteiner">
+        <section id="p0">
+            <h3>1 - ¿Que significa Moises?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">Salvado de las aguas
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">Don del Señor
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">Dios con nosotros
+            </label>
+        </section>
+        <section id="p1">
+            <h3>2 - ¿A donde huyó Moises delante de faraon?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">Madian
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">Monte Sinai
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">Jerusalén
+            </label>
+        </section>
+        <section id="p3">
+            <h3>3 - ¿Como se llama la hija de Reuel que dio por mujer a Moises ?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">Sefora
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">Raquel
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">Jocabeb
+            </label>
+        </section>
+        <section id="p3">
+            <h3>4 - ¿Como se llama la hermana de Moises?</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)">Lea
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">Bilha
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)">Miriam
+            </label>
+        </section>
+        <section id="p4">
+            <h3>5 - ¿El rey de Egipto dio la orden a estas parteras de matar a los niños hebreros?</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">Abigail y Agar
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)">Sifra y Fúa
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="respuesta(4,this)">Ana y Dina 
+            </label>
+        </section>
+        
+        <button onclick="corregir()">CORREGIR</button>
+        <h2>Cantidad acertadas: <span id="resultado"></span></h2>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
